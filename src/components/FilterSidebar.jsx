@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./FilterSidebar.css";
 
 export default function FilterSidebar() {
   const [category, setCategory] = useState("ALL");

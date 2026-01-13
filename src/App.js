@@ -1,13 +1,18 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import FilterSidebar from "./components/FilterSidebar";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
-      <main className="p-6">
-        <h1 className="text-2xl font-bold"></h1>
-      </main>
+      <div className="home-layout">
+        <FilterSidebar />
+        <main className="main-content">
+          <h1 className="text-2xl font-bold">Products</h1>
+        </main>
+      </div>
     </div>
   );
 }
